@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #000000;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #766a91;
+	    color: white; 
+        }
+
+        .total-row {
+            background-color: #f9f9f9;
+            font-weight: bold;
+        }
+
+        .combine-shipment {
+            background-color: #ffffff;
+	    font-weight: bold;
+	    text-border: 3px solid #007bff;
+            text-align: right; 
+        }
+    </style>
+</head>
+<body>
+
+<h2><!-- Subject Heading --></h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Code</th>
+            <th>Product</th>
+            <th>Product Size</th>
+            <th>Info</th>
+            <th>Unit Price</th>
+            <th>Qty</th>
+            <th>Location</th>
+            <th>Total</th>
+            <th>C.Note</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Product List Rows -->
+        <tr>
+            <td><img src="product1.jpg" alt="Product 1" width="100"></td>
+            <td>Cincin Emas Lintah Silang Chrome L:0.8CM</td>
+            <td>CC-018841</td>
+            <td>CE0062488</td>
+            <td>Size:16cm Weight:4:09g Gold Rate:293</td>
+            <td>1,342.37</td>
+            <td>1</td>
+            <td>DAMAI</td>
+            <td>1,342.37</td>
+            <td rowspan="2">EN75298158MY</td>
+        </tr>
+        <tr>
+            <td><img src="product2.png" alt="Product 2" width="100"></td>
+            <td>Gelang Tocang Diamond Cut Chrome L:1CM/td>
+            <td>LL-018836</td>
+            <td>GL0008127</td>
+            <td>Size:5.6cm Weight:25.94g Gold Rate:293</td>
+            <td>8,450.92</td>
+            <td>1</td>
+            <td>DAMAI</td>
+            <td>8,450.92</td>
+        </tr>
+        <tr>
+            <td><img src="product3.jpg" alt="Product 3" width="100"></td>
+            <td>Cincin Emas Tocang Diamond Cut Chrome L:1CM</td>
+            <td>CC-018840</td>
+            <td>CE0062510</td>
+            <td>Size:16cm Weight:4:01g Gold Rate:293</td>
+            <td>1,318.93</td>
+            <td>1</td>
+            <td>SGBESI</td>
+            <td>1,318.93</td>
+            <td>EN752981577MY</td>
+        </tr>
+
+        <!-- Combined Shipment Rows -->
+        <tr class="combine-shipment">
+            <td colspan="10">Combine Shipment</td>
+        </tr>
+        <tr class="total-row">
+            <td colspan="8" class="align-right">Total Items</td>
+            <td>11,112.22</td>
+            <td><!-- Additional column content, if needed --></td>
+        </tr>
+        <tr class="total-row">
+            <td colspan="8" class="align-right">Discount</td>
+            <td>68.08</td>
+            <td>Voucher Code RD-GMUC-QX</td>
+        </tr>
+        <tr class="total-row">
+            <td colspan="8" class="align-right">Grand Total</td>
+            <td>11,044.14</td>
+            <td><!-- Additional column content, if needed --></td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
